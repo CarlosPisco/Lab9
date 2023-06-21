@@ -31,23 +31,40 @@
                 alert("numero de pista de baile incorrecto");
             }
 
+            var input1 = document.getElementById("i1")
+            var input2 = document.getElementById("i2")
+            var input3 = document.getElementById("i3")
+            var input4 = document.getElementById("i4")
+            var input5 = document.getElementById("i5")
+
+
+
             if(i=="0"){
 
                 document.getElementById('img1').src='robot.png';
+                input1.disabled = false;
                 document.getElementById('img2').src='robot.png';
+                input2.disabled = false;
 
                 if(numPersonaje=="3"){
                     document.getElementById('img3').src='robot.png';
+
+                    input3.hidden = false;
                 }
                 if(numPersonaje=="4"){
                     document.getElementById('img3').src='robot.png';
+                    input3.hidden = false;
                     document.getElementById('img4').src='robot.png';
+                    input4.hidden = false;
 
                 }
                 if(numPersonaje=="5"){
                     document.getElementById('img3').src='robot.png';
+                    input3.hidden = false;
                     document.getElementById('img4').src='robot.png';
+                    input4.hidden = false;
                     document.getElementById('img5').src='robot.png';
+                    input5.hidden = false;
                 }
 
 
@@ -87,11 +104,15 @@
 
 
 <img id="img1">
-<img id="img2">
+<input type="text " id="i1" >
+<img id="img2" >
+<input type="text " id="i2" disabled>
 <img id="img3">
+<input type="text " id="i3" disabled>
 <img id="img4">
+<input type="text " id="i4" disabled>
 <img id="img5">
-
+<input type="text " id="i5" disabled>
 
 
 
